@@ -16,11 +16,14 @@ class PlacesController < ApplicationController
     else
       render :new, status: :unprocessable_entity
     end
+
+    @photo = current_user.photo.create(place_params)
   end
 
   def show
     @place = Place.find(params[:id])
     @comment = Comment.new
+    @photo = Photo.new
   end
 
   def edit
