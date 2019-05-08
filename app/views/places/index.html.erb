@@ -1,3 +1,45 @@
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <div class="col-12 sm-6">
+        <div class="photo-style">
+          <%= image_tag 'wings.jpg', class: 'd-block img-fluid' %>
+            <h3> Find the best wings in your area!</h3>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="col-12 sm-6">
+        <div class="photo-style">
+          <%= image_tag 'italian.jpg', class: 'd-block img-fluid' %>
+            <h3> Discover hidden local Italian gems!</h3>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="col-12 sm-6">
+        <div class="photo-style">
+          <%= image_tag 'mexican.jpg', class: 'd-block img-fluid' %>
+              <h3> Review the best Mexican cuisine! </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
 <% @places.each do |place| %>
   <div class="booyah-box col-10 offset-1">
     <h1><%= link_to place.name, place_path(place) %></h1><br />
