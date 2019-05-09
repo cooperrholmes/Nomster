@@ -127,12 +127,13 @@
   </div>
 </div>
 
-
-<div class="col-12 sm-4">
-  <% @place.photos.each do |photo| %>
-    <div class="photo-style">
-      <%= image_tag photo.picture.url, class:"img-fluid" %>
-      <%= photo.caption %>
-    </div>
-  <% end %>
+<div class="booyah-box">
+  <div class="col-12 sm-4">
+    <% @place.photos.each do |photo| %>
+      <div class="photo-style">
+        <%= image_tag photo.picture.url, class:"img-fluid" %>
+        <%= photo.caption %>
+      </div>
+    <% end %>
+  </div>
 </div>
