@@ -120,17 +120,15 @@ blockquote p {
 .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
   max-height: 550px;
   width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 650px;
+
+
 }
 
 .carousel-item.active, 
 .carousel-item-next, 
 .carousel-item-prev {
   display: block;
-}
-
-.nav-item {
 }
 
 .navbar-inverse .navbar-nav .nav-link {
